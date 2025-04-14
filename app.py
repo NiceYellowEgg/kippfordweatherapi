@@ -23,4 +23,4 @@ def get_temperature():
       
 @app.route("/kippford/weather/temperature")
 def temperature():
-    return jsonify({"temperature": get_temperature})
+    return jsonify({"temperature": get_temperature()})
