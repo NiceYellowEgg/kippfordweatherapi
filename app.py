@@ -14,7 +14,7 @@ def get_windchill():
             cells = row.find_all("td")
       
             if cells and "Windchill" in cells[0].text:
-                return re.findall("[\d]*[.][\d]+", cells[1].text.strip()
+                return re.findall(r"[\d]*[.][\d]+", cells[1].text.strip())
    
     except Exception as e:
         return f"Error: {e}"
